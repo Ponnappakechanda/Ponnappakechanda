@@ -246,12 +246,16 @@ footer {
 @media (max-width: 900px) {
 
 header {
+    display: felx;
+    justify-content: space-between;
+    align-items: center;
     padding: 15px 20px;
-    flex-wrap: wrap;
 }
 
 .menu-toggle {
     display: block;
+    font-size: 28px;
+    cursor: pointer;
 }
 
 .nav-right {
@@ -268,6 +272,10 @@ header {
 .nav-right.active {
     display: flex;
 }
+    .nav-left h2{
+        font-size: 20px;
+        margin: 0;
+    }
 
 .paper-grid {
     flex-direction: column;
