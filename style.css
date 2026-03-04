@@ -235,3 +235,20 @@ footer {
     font-size: 32px;
 }
 
+@media (max-width: 768px) {
+
+header {
+    flex-direction: column;
+    padding: 15px 20px;
+}
+
+.nav-left h2 {
+    font-size: 20px;
+    text-align: center;
+}
+
+.nav-right {
+    margin-top: 10px;
+}
+
+}
