@@ -235,20 +235,37 @@ footer {
     font-size: 32px;
 }
 
+.menu-toggle {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+/* Mobile style */
 @media (max-width: 768px) {
 
 header {
-    flex-direction: column;
     padding: 15px 20px;
+    flex-wrap: wrap;
 }
 
-.nav-left h2 {
-    font-size: 20px;
-    text-align: center;
+.menu-toggle {
+    display: block;
 }
 
 .nav-right {
+    display: none;
+    width: 100%;
+    flex-direction: column;
     margin-top: 10px;
+}
+
+.nav-right a {
+    padding: 10px 0;
+}
+
+.nav-right.active {
+    display: flex;
 }
 
 }
