@@ -1,0 +1,237 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 350px;
+    background-color: white;
+    margin-bottom: 40px ;
+}
+
+/* Name on left */
+.nav-left h2 {
+    color: black;
+    margin: 0;
+}
+
+/* Navigation container */
+.nav-right {
+    display: flex;
+    gap: 12px;
+}
+
+/* Navigation buttons */
+.nav-right a {
+    text-decoration: none;
+    color: black;
+    padding: 8px 16px;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #a5f3fc, #86efac); /* light blue + green */
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+/* Hover effect */
+.nav-right a:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+}
+
+.about {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+
+.about-image img {
+    width: 450px;
+    height: 600px;
+    object-fit: cover;
+    border-radius: 50% / 60%;
+    border: 4px solid #e5e7eb;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.about-text {
+    font-size: 32px;
+}
+
+.container {
+    max-width: 2100px;   /* page width */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.cv-button {
+    display: inline-block;
+    padding: 12px 22px;
+    font-size: 16px;
+    font-weight: 500;
+    color: black;
+    text-decoration: none;
+    border-radius: 25px;
+    background: linear-gradient(135deg, #a5f3fc, #86efac); /* light blue + green */
+    transition: all 0.3s ease;
+}
+
+.cv-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.papers h1 {
+    text-align: center;
+}
+
+.paper-grid {
+    display: flex;
+    gap: 5%;
+}
+
+.paper-grid iframe {
+    width: 30%;
+    border: none;
+}
+
+footer {
+    background-color: #0f172a;
+    color: white;
+    text-align: center;
+    padding: 5px 0;
+    width: 100%;
+}
+
+.social-panel {
+    position: fixed;
+    right: -35px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #0f172a;
+    padding: 10px;
+    border-radius: 10px 0 0 10px;
+    transition: right 0.3s;
+    z-index: 1000;
+}
+
+.social-panel:hover {
+    right: 0;
+}
+
+.social-panel a {
+    display: block;
+    margin: 10px 0;
+}
+
+.social-panel img {
+    width: 28px;
+    height: 28px;
+}
+
+.update_soon {
+    text-align: center;
+}
+.publications h2 {
+    text-align: center;
+    font-size: 32px;
+}
+.publications {
+    font-size: 24px;
+}
+
+.publications a {
+    color: black;          /* remove blue color */
+    text-decoration: none; /* remove underline */
+}
+
+
+.education h2 {
+    text-align: center;
+    font-size: 32px;
+}
+
+
+.education-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;   /* two equal columns */
+    gap: 40px;                        /* space between boxes */
+    width: 100%;                      /* use full width */
+    font-size: 24px;
+}
+
+.edu-box {
+    padding: 25px;                    /* bigger box */
+    background: #f8fafc;
+    border-left: 5px solid #0f172a;
+    line-height: 1.6;
+    font-size: 16px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+
+.exam-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    width: 100%;
+}
+
+.exam-box {
+    padding: 20px;
+    background: #f8fafc;
+    border-left: 5px solid #0f172a;
+    line-height: 1.6;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+}
+
+.exam-grid h2 {
+    text-align: center;
+    font-size: 32px;
+}
+
+.teach h2 {
+    text-align: center;
+    font-size: 32px;
+}
+
+.teaching {
+    max-width: 900px;
+}
+
+.teach-row {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    margin-bottom: 25px;
+}
+
+.teach-date {
+    font-weight: bold;
+}
+
+.teach-details {
+    line-height: 1.6;
+}
+
+.conference {
+    max-width: 900px;
+}
+
+.conf-row {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    margin-bottom: 25px;
+}
+
+.conf-date {
+    font-weight: bold;
+}
+
+.conf-details {
+    line-height: 1.6;
+}
+
+.activity h2 {
+    text-align: center;
+    font-size: 32px;
+}
+
