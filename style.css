@@ -268,16 +268,33 @@ header {
      margin-left: auto;
 }
 
-.nav-right {
-    display: none;
-    width: 100%;
-    flex-direction: column;
-    margin-top: 10px;
+    .nav-right{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100vh;
+    background:white;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    transform:translateY(-100%);
+    transition:transform 0.4s ease;
+
+    z-index:999;
 }
 
-.nav-right a {
-    padding: 10px 0;
+.nav-right.active{
+    transform:translateY(0);
 }
+
+.nav-right a{
+    font-size:22px;
+}
+
 
 .nav-right.active {
     display: flex;
