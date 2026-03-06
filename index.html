@@ -105,13 +105,16 @@ I am a computational physicist specializing in 2D monolayers and heterostructure
     <p>© 2026 Dr. Ponnappa K. P.</p>
 </footer>
 <script>
+
 function toggleMenu() {
     var menu = document.getElementById("nav-menu");
     menu.classList.toggle("active");
 }
-	window.addEventListener("scroll", function() {
+
+window.addEventListener("scroll", function() {
 
     let name = document.getElementById("header-name");
+    let menu = document.getElementById("nav-menu");
 
     let showPoint = 230;   // desktop default
 
@@ -119,13 +122,22 @@ function toggleMenu() {
         showPoint = 400;   // mobile appears later
     }
 
+    /* show header name */
+
     if(window.scrollY > showPoint){
         name.style.opacity = "1";
-    }else{
+    } else {
         name.style.opacity = "0";
     }
 
+    /* close mobile menu when scrolling */
+
+    if(menu.classList.contains("active")){
+        menu.classList.remove("active");
+    }
+
 });
+
 </script>
 </body>
 </html>
