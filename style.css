@@ -5,12 +5,15 @@ header {
     padding: 15px 10%;
     background-color: white;
     margin-bottom: 40px ;
-}
-
-header{
     position:sticky;
     top:0;
     z-index:1000;
+}
+
+
+#header-name{
+    opacity:0;
+    transition:opacity 0.3s ease;
 }
 
 /* Name on left */
