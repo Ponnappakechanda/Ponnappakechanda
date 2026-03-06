@@ -58,6 +58,21 @@
 <footer>
     <p>© 2026 Dr. Ponnappa K. P.</p>
 </footer>
+<script>
 
+function toggleMenu(){
+    document.getElementById("nav-menu").classList.toggle("active");
+}
+
+/* close menu when scrolling */
+
+window.addEventListener("scroll", function(){
+    let menu = document.getElementById("nav-menu");
+    if(menu.classList.contains("active")){
+        menu.classList.remove("active");
+    }
+});
+
+</script>
 </body>
 </html>
